@@ -107,6 +107,7 @@ def watch_video():
             break
     driver(text=news).click()
 
+    text_list=None
     #删除最早一天的记录
     if len(all_of_list)>250:
         text_list = np.array (all_of_list[25:])

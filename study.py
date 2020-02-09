@@ -111,6 +111,8 @@ def watch_video():
     #删除最早一天的记录
     if len(all_of_list)>250:
         text_list = np.array (all_of_list[25:])
+    else:
+        text_list = np.array (all_of_list)
     #存储已看视频和文章
     np.save ('db.npy',text_list)
     
